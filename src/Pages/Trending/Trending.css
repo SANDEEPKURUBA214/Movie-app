@@ -1,0 +1,144 @@
+.movie-overlay-bg {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Centered modal */
+.movie-modal {
+  background: #141414;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  color: white;
+  outline: none;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  animation: fadeIn 0.3s ease-in-out;
+  position: relative; /* for close button positioning */
+}
+
+/* Trailer video full width */
+.movie-modal iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Close button at top-right like Netflix */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.close-btn:hover {
+  color: red;
+}
+
+/* Smooth open animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ---------- CARD GRID STYLES ---------- */
+
+/* Container for cards */
+.trending-container,
+.series-container,
+.search-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* spacing between cards */
+  justify-content: center; /* center cards */
+  margin-top: 100px; /* space below header */
+  padding-bottom:100px;
+
+
+
+}
+
+/* Each card */
+.movie-card {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+
+  
+}
+
+.movie-card:hover {
+  transform: scale(1.08);
+  z-index: 2;
+}
+
+/* Poster */
+.movie-poster {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  
+}
+
+/* Overlay with title + year */
+.movie-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.movie-card:hover .movie-overlay {
+  opacity: 1;
+}
+
+.movie-overlay h3,
+.movie-overlay p {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+}
+
+.trending-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  position: fixed;
+  top: 70px;     /* stays under header */
+  left: 20px;    /* left corner */
+  z-index: 1000;
+}
+
