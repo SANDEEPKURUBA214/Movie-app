@@ -35,9 +35,13 @@ The app is deployed on Render for live access.
 
 Follow these steps to run the project locally:
 
+## ⚡ Getting Started
+
+Follow these steps to run the project locally:
+
 ```bash
 # Clone the repository
-git clone https://github.com/ySANDEEPKURUBA214/Movie-app.git
+git clone https://github.com/SANDEEPKURUBA214/Movie-app.git
 
 # Navigate to project folder
 cd frontend
@@ -48,8 +52,12 @@ npm install
 
 # Start the development server
 npm start
+```   
 
-```
+---
+
+## 📂 Project Structure
+```bash
 movie-app/
  ┣ src/
  ┃ ┣ components/   # Reusable components
@@ -59,3 +67,4 @@ movie-app/
  ┣ public/         # Static assets
  ┣ package.json
  ┣ README.md
+
