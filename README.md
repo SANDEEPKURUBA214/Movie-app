@@ -31,18 +31,6 @@ The app is deployed on Render for live access.
 
 ---
 
-movie-app/
- ┣ src/
- ┃ ┣ components/   # Reusable components
- ┃ ┣ pages/        # Pages (Home, Search, Trending, TV)
- ┃ ┣ App.js        # Main app entry
- ┃ ┣ index.js
- ┣ public/         # Static assets
- ┣ package.json
- ┣ README.md
-
- 
-
 ## ⚡ Getting Started
 
 Follow these steps to run the project locally:
@@ -53,7 +41,7 @@ git clone https://github.com/ySANDEEPKURUBA214/Movie-app.git
 
 # Navigate to project folder
 cd frontend
-cd movie-app
+cd moviehub
 
 # Install dependencies
 npm install
@@ -61,5 +49,16 @@ npm install
 # Start the development server
 npm start
 
+
+```bash
+movie-app/
+ ┣ src/
+ ┃ ┣ components/   # Reusable components
+ ┃ ┣ pages/        # Pages (Home, Search, Trending, TV)
+ ┃ ┣ App.js        # Main app entry
+ ┃ ┣ index.js
+ ┣ public/         # Static assets
+ ┣ package.json
+ ┣ README.md
 
 
