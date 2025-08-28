@@ -49,7 +49,13 @@ npm install
 # Start the development server
 npm start
 
-
-
-
-
+```
+movie-app/
+ ┣ src/
+ ┃ ┣ components/   # Reusable components
+ ┃ ┣ pages/        # Pages (Home, Search, Trending, TV)
+ ┃ ┣ App.js        # Main app entry
+ ┃ ┣ index.js
+ ┣ public/         # Static assets
+ ┣ package.json
+ ┣ README.md
