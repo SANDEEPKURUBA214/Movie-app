@@ -53,10 +53,10 @@ npm install
 # Start the development server
 npm start
 ```   
-
 ---
 
 ## 📂 Project Structure
+```bash
 movie-app/
  ┣ src/
  ┃ ┣ components/   # Reusable components
@@ -66,6 +66,7 @@ movie-app/
  ┣ public/         # Static assets
  ┣ package.json
  ┣ README.md
+```
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!  
